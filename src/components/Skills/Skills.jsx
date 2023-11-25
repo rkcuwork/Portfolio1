@@ -33,14 +33,13 @@ function Skills() {
     <section id="skills">
       <span className="skillTitle">What I Do</span>
       <span className="skillDesc"> I possess advanced skills in designing, developing, and implementing machine learning algorithms. My expertise lies in leveraging cutting-edge technologies and frameworks such as TensorFlow and Scikit-learn to create robust models. I am adept at data preprocessing, feature engineering, and statistical analysis, ensuring the extraction of meaningful insights from complex datasets. My proficiency extends to deep learning techniques, including neural networks, and natural language processing, allowing me to tackle diverse challenges in the field. I excel in model evaluation, fine-tuning, and optimization, consistently achieving high accuracy and performance.</span>
+
       <div className='skillBars'>
         {Object.keys(skills).map((key) => (
           <SkillBox key={key} image={skills[key].image} title={skills[key].title} description={skills[key].description}></SkillBox>
         ))}
       </div>
-      
-      
-      
+
     </section>
   )
 }
